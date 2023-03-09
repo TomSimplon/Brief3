@@ -1,0 +1,16 @@
+@import url(./css/header.css);
+@import url(./css/about.css);
+@import url(./css/portfolio.css);
+@import url(./css/center.css);
+@import url(./css/blog.css);
+@import url(./css/contact.css);
+@import url(./css/footer.css);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior:smooth;
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}

@@ -1,0 +1,159 @@
+body {
+    padding: 0px; 
+    margin: 0;
+}
+
+#home {
+  background-image: url('../img/banner_bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  z-index: 1;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: white;
+}
+
+.header.nav-fixed {
+  background-color: rgba(250, 250, 250, 0.95);
+  color: black;
+}
+
+.header.nav-fixed a {
+  color: black;
+}
+
+header nav .logo {
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+
+header nav .onglets {
+  display: flex;
+  margin-top: 10px;
+  z-index: 2;
+  transition: left 0.5s ease;
+  }
+
+  @media screen and (max-width: 640px) {
+    header nav .onglets {
+      display: none;
+    }
+
+    header nav .onglets a {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: center;
+      background-color: gray;
+      border: 2px;
+    }
+    /* Le code suivant crée l'apparence du menu burger */
+    .menu-btn {
+      display: block;
+      cursor: pointer;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      z-index: 1001;
+      background-color: orange;
+    }
+  
+    .bar {
+      display: block;
+      width: 35px;
+      height: 5px;
+      background-color: white;
+      margin: 7px auto;
+      transition: all 0.3s;
+    }
+  
+    .menu-btn.open .bar:nth-child(1) {
+      transform: translateY(12px) rotate(45deg);
+    }
+  
+    .menu-btn.open .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-btn.open .bar:nth-child(3) {
+      transform: translateY(-12px) rotate(-45deg);
+    }
+  }
+
+
+header nav a{
+  font-size: 15px;
+  padding: 20px;
+  color:white;
+  text-decoration:none;
+  cursor: pointer;
+}
+
+.contenu {
+    padding: 300px;
+    vertical-align: middle;
+}
+
+.contenu h1 {
+    font-size: 45px;
+    text-align: center;
+}
+
+.contenu .texte {
+    text-align: center;
+}
+
+.contenu .start{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 15px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.contenu .start a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 640px){
+  .contenu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+  }
+  .contenu h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .contenu .texte {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contenu .start {
+    margin: 20px auto;
+  }
+}

@@ -1,0 +1,136 @@
+#blog {
+    width: 100%;
+    color: white;
+    background-image: url('../img/blog-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog .container {
+    display: flex;
+    height: 750px;
+}
+
+.blog .left {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 200px;
+    width: 400px;
+    padding-bottom: 200px;
+    margin-left: -100vh;
+    padding-left: 100vh;
+}
+
+.blog .left .blog_post {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.blog .left .texte h3 {
+    font-size: 20px;
+}
+
+.blog .left .liste {
+    padding-top: 40px;
+}
+
+.blog .left .liste a {
+cursor: pointer;
+text-decoration: none;
+color: black;
+}
+
+.blog .left .liste a:hover {
+color: orange;
+}
+
+.blog .left .liste li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.blog .container .right {
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+}
+
+.blog .container .right .table {
+    margin: 0px;
+    padding: 0px;
+}
+
+.blog .container .right .table .image img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.blog .container .right .présentation {
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    color: black;
+}
+
+.blog .container .right .présentation .texte {
+    padding: 20px;
+}
+
+.blog .container .right .présentation .texte h4 {
+    font-size: 20px;
+}
+
+.blog .container .right .présentation .texte a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #33c1cf;
+    padding-top: 20px;
+}
+
+.blog .container .right .présentation .texte p {
+    padding-top: 20px;
+    color: #7a7a7a;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+
+@media screen and (max-width: 640px){
+.blog .container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-left: 0px;
+padding-right: 0px;
+height: 100%;
+}
+
+.blog .container .left {
+width: 100%;
+}
+
+.blog .container .left .texte {
+padding-left: 0;
+padding-right: 0;
+text-align: center;
+}
+
+.blog .container .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog .container .right .table {
+    margin: 0 auto;
+    padding-left: 50px;
+}
+}
+

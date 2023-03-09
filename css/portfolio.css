@@ -1,0 +1,106 @@
+#portfolio {
+    height: 100%; 
+    width: 100%;
+    color: white;
+}
+
+.portfolio .container {
+    display: flex;
+}
+.portfolio .container .left {
+    background-color: #33c1cf;
+    padding-top: 200px;
+    width: 400px;
+    padding-bottom: 200px;
+    margin-left: -100vh;
+    padding-left: 100vh;
+}
+
+.portfolio .container .left .texte {
+    padding-left: 100px;
+    padding-right: 30px;
+}
+
+.portfolio .container .left .texte h4 {
+    font-size: 20px;
+}
+
+.portfolio .container .left .texte hr {
+    width: 95%;
+}
+
+.portfolio .container .left .texte .liste {
+    padding-top: 40px;
+}
+
+.portfolio .container .left .texte .liste li {
+    padding: 10px;
+}
+
+.portfolio .container .left .texte .liste li a {
+cursor: pointer;
+text-decoration: none;
+color: white;
+}
+
+.portfolio .container .right {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.portfolio .container .right .colonne {
+    width: 800px;
+}
+
+.portfolio .container .right .colonne .image .portfolio-item {
+display: inline-block;
+font-size: 0px;
+}
+
+.portfolio .container .right .colonne .image .portfolio-item img {
+    height: 250px;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 640px){
+.portfolio .container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-left: 0px;
+padding-right: 0px;
+
+}
+
+.portfolio .container .left {
+width: 100%;
+}
+
+.portfolio .container .left .texte {
+padding-left: 0;
+padding-right: 0;
+text-align: center;
+}
+
+.portfolio .container .left .texte hr {
+margin-left: 12px;
+}
+
+.portfolio .container .right {
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+width: 100%;
+}
+
+.portfolio-item {
+padding: 10px;
+}
+
+.image img {
+max-width: 100%;
+}
+}
